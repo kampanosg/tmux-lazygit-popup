@@ -4,6 +4,9 @@
     <i>Access LazyTest from anywhere in tmux, without a session/window/pane</i>
     <br />
     <br />
+    
+https://github.com/kampanosg/tmux-lazygit-popup/assets/30287348/b5a3edcc-7986-41ac-8ca5-5a20cf4148ff
+
 </p>
 
 ## Installation
