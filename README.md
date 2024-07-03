@@ -1,5 +1,10 @@
-# tmux-lazygit-popup
-
+<p align="center">
+    <b>tmux-lazygit-popup</b>
+    <br />
+    <i>Access LazyTest from anywhere in tmux, without a session/window/pane</i>
+    <br />
+    <br />
+</p>
 
 ## Installation
 
