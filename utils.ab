@@ -1,0 +1,28 @@
+let DEFAULT_WIDTH = "90%"
+let DEFAULT_HEIGHT = "90%"
+let DEFAULT_BORDER = "rounded"
+
+pub fun parse_args(args) {
+    let width = args[0]
+    let height = args[1]
+    let border = args[2]
+
+    if width == "" {
+        width = DEFAULT_WIDTH
+    }
+
+    if height == "" {
+        height = DEFAULT_HEIGHT
+    }
+
+    if border == "" {
+        border = DEFAULT_BORDER
+    }
+
+    let cmd = "lazygit"
+    let current_path = $tmux display-message -p '#\{pane_current_path}'$ failed {
+        echo "failed to find pwd"
+    }
+
+    return [width, height, border, current_path, cmd]
+}
