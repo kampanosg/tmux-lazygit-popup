@@ -9,8 +9,6 @@ __AS=$?
 __0_DEFAULT_WIDTH="90%"
 __1_DEFAULT_HEIGHT="90%"
 __2_DEFAULT_BORDER="rounded"
-__AMBER_ARRAY_0=("rounded" "single" "double" "heavy" "simple" "padded" "none");
-__3_VALID_BORDERS=("${__AMBER_ARRAY_0[@]}")
 function parse_args__26_v0 {
     local args=("${!1}")
     local width="${args[0]}"
@@ -32,8 +30,8 @@ if [ $__AS != 0 ]; then
         echo "failed to find pwd"
 fi;
     local current_path="${__AMBER_VAL_0}"
-    __AMBER_ARRAY_1=("${width}" "${height}" "${border}" "${current_path}" "${cmd}");
-    __AF_parse_args26_v0=("${__AMBER_ARRAY_1[@]}");
+    __AMBER_ARRAY_0=("${width}" "${height}" "${border}" "${current_path}" "${cmd}");
+    __AF_parse_args26_v0=("${__AMBER_ARRAY_0[@]}");
     return 0
 }
 args=("$@")
