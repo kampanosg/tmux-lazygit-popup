@@ -2,12 +2,12 @@ import { exit } from "std"
 import { parse_args } from "./utils.ab"
 
 main(args) {
-    silent $lazygit -v$ failed {
+    silent $command -v lazygit$ failed {
         echo "cannot execute lazygit command. make sure it is installed"
         exit(1)
     }
 
-    silent $tmux -V$ failed {
+    silent $command -v tmux$ failed {
         echo "cannot execute tmux command. make sure it is installed"
         exit(1)
     }

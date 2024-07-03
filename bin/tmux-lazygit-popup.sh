@@ -35,7 +35,7 @@ fi;
     return 0
 }
 args=("$@")
-            lazygit -v > /dev/null 2>&1
+            command -v lazygit > /dev/null 2>&1
 __AS=$?;
 if [ $__AS != 0 ]; then
             echo "cannot execute lazygit command. make sure it is installed"
@@ -43,7 +43,7 @@ if [ $__AS != 0 ]; then
             __AF_exit23_v0__7=$__AF_exit23_v0;
             echo $__AF_exit23_v0__7 > /dev/null 2>&1
 fi
-            tmux -V > /dev/null 2>&1
+            command -v tmux > /dev/null 2>&1
 __AS=$?;
 if [ $__AS != 0 ]; then
             echo "cannot execute tmux command. make sure it is installed"
